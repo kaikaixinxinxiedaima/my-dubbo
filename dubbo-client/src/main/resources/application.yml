@@ -1,0 +1,11 @@
+# \u542F\u52A8\u7AEF\u53E3
+server:
+  port: 9000
+
+dubbo:
+  application:
+    name: dubbo-client
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181
