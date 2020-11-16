@@ -25,6 +25,7 @@
     <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
     <dubbo.version>2.7.3</dubbo.version>
     <dubbo-spring-boot-starter.version>2.7.3</dubbo-spring-boot-starter.version>
+    <spring-cloud-starter-netflix-hystrix>2.1.6.RELEASE</spring-cloud-starter-netflix-hystrix>
   </properties>
 
   <!-- 聚合子模块 -->
@@ -71,6 +72,14 @@
               </exclusion>
           </exclusions>
         <version>${dubbo-spring-boot-starter.version}</version>
+      </dependency>
+
+
+      <!--hystrix-->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        <version>${spring-cloud-starter-netflix-hystrix}</version>
       </dependency>
 
     </dependencies>

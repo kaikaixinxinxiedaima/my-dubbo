@@ -9,3 +9,8 @@ dubbo:
     address: zookeeper://127.0.0.1:2181
   metadata-report:
     address: zookeeper://127.0.0.1:2181
+  # 全局超时时间
+  consumer:
+    timeout: 4000
+    # 重试次数（默认2）
+    retries: 2
