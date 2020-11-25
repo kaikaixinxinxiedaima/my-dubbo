@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: test-service-center
+  cloud:
+    nacos:
+      discovery:
+        #必须配置ip地址
+        server-addr: 127.0.0.1:8841,127.0.0.1:8842
+#        # 将自己的服务注册到注册中心
+        register-enabled: true
+      config:
+        server-addr: 127.0.0.1:8841,127.0.0.1:8842
+        file-extension: yaml #指定配置文件类型为yaml文件
+        prefix: test-service-center # 手动指定配置文件前缀
+        group: DEFAULT_GROUP
+  profiles:
+    active: prd #表示开发环境
+
+test:
+  user: 张三

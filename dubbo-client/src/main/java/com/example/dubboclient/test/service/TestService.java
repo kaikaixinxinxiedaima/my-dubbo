@@ -12,7 +12,7 @@ public class TestService {
     @Reference(version = "1.0", timeout = 2000,
             methods = {
                     @Method(name = "sayHello", timeout = 1000)
-            }, retries = 2, check = true
+            }, retries = 2, check = false
     )
     DubboTest dubboTest;
 
